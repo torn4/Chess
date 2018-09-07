@@ -7,6 +7,7 @@
 sf::Sprite whiteQueen::wksetvar()   //Här måste vi returna sf::sprite
 {
               sf::Image whiteKnight;
+
         if (!(whiteKnight.loadFromFile("../Figures/whiteQueen.png")))
                 std::cout << "Cannot load whiteKing image"; //Load Image
 
@@ -25,7 +26,7 @@ return spriteWhiteKnight;
 
 }
 
- void whiteQueen::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+ void whiteQueen::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight,bool color){ //Här ska inget returnas
 
         sf::Image whiteKnight;
         if (!(whiteKnight.loadFromFile("../Figures/whiteQueen.png")))

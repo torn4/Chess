@@ -28,5 +28,4 @@ sf::Sprite chessBoard::chessBoardsetvar()   //Här måste vi returna sf::sprite
         textureBoard.loadFromImage(chessBoard);
 
 window.draw(spriteChessBoard);
-
 }

@@ -25,7 +25,7 @@ return spriteWhiteKnight;
 
 }
 
- void whitePawn::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+ void whitePawn::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight,bool color){ //Här ska inget returnas
 
         sf::Image whiteKnight;
         if (!(whiteKnight.loadFromFile("../Figures/whitePawn.png")))

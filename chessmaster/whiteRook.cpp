@@ -26,11 +26,12 @@ return spriteWhiteKnight;
 
 }
 
- void whiteRook::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+ void whiteRook::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight,const char* piece){ //Här ska inget returnas
 
         sf::Image whiteKnight;
-        if (!(whiteKnight.loadFromFile("../Figures/whiteRook.png")))
+        if (!(whiteKnight.loadFromFile(piece)))
         std::cout << "Cannot load whiteKing image"; //Load Image
+
         sf::Texture textureWhiteKnight;   //Load Texture from image
         textureWhiteKnight.loadFromImage(whiteKnight);
 window.draw(spriteWhiteKnight);
