@@ -411,9 +411,11 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536241971 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1536314293 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
+	"WhiteKing.h"
+	"chessboard.h"
 
 1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -823,4 +825,18 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+
+1536314282 source:c:\users\sj930516\chessgame\chessmaster\whiteking.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"WhiteKing.h"
+
+1536310258 c:\users\sj930516\chessgame\chessmaster\whiteking.h
+
+1536314187 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"chessboard.h"
+
+1536313970 c:\users\sj930516\chessgame\chessmaster\chessboard.h
 
