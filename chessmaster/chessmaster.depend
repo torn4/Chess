@@ -411,12 +411,14 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536322734 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1536327521 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
 	"whiteRook.h"
 	"print_sfml.h"
+	"find_piece.h"
+	<string>
 
 1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -876,11 +878,21 @@
 
 1536321424 c:\users\sj930516\chessgame\chessmaster\whiterook.h
 
-1536322731 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
+1536323752 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
 	"whiteRook.h"
 
-1536322731 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
+1536323480 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
+
+1536327761 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"find_piece.h"
+	<vector>
+	<map>
+	<string>
+
+1536327470 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 

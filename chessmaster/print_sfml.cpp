@@ -4,17 +4,22 @@
 #include "whiteRook.h"
 
 
-void print_function(sf::RenderWindow &window)
+void print_function(sf::RenderWindow &window, int start)
 {
-         sf::Sprite whiteRookn;
-     sf::Sprite spriteBoard;
-    whiteRook wr;
-whiteRookn = wr.wksetvar();
 
-chessBoard cb;
-spriteBoard = cb.chessBoardsetvar();
 
-     cb.boardDraw(window,spriteBoard);
+        sf::Sprite whiteRookn;
+        sf::Sprite spriteBoard;
+        whiteRook wr;
+        whiteRookn = wr.wksetvar();
+
+        chessBoard cb;
+        if(start){
+                std::cout<<"First print"<<std::endl;
+        spriteBoard = cb.chessBoardsetvar();
+
+        cb.boardDraw(window,spriteBoard);
+
 
         whiteRookn = wr.wksetPos(0,7,whiteRookn);
         wr.wkdraw(window,whiteRookn,"../Figures/whiteRook.png");
@@ -90,5 +95,6 @@ spriteBoard = cb.chessBoardsetvar();
         wr.wkdraw(window,whiteRookn,"../Figures/blackKing.png");
         whiteRookn = wr.wksetPos(3,0,whiteRookn);
         wr.wkdraw(window,whiteRookn,"../Figures/blackQueen.png");
-
+            window.display();
+        }
         }

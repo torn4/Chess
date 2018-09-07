@@ -1,2 +1,2 @@
 
-void print_function(sf::RenderWindow &window);
+void print_function(sf::RenderWindow &window,int start);

@@ -3,26 +3,24 @@
 #include "chessboard.h"
 #include "whiteRook.h"
 #include "print_sfml.h"
+#include "find_piece.h"
+#include <string>
 
 
 int main()
 {
 
-
-
 sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board");// Rutan som brädet ska ligga i
 
-
-
-
+std::string piece_name;
+piece_name="bp1";
+int start_print;
+ start_print =1;
+ window.clear();
     while (window.isOpen())
     {
-
-
-
      sf::Event event;
-
-
+std::cout<<piece_pos(piece_name)<<std::endl;
                 while (window.pollEvent(event))
                 {
                         if (event.type == sf::Event::Closed)
@@ -30,12 +28,10 @@ sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board");// Rutan som b
 
                         }//Event handling done
 
-        window.clear();
+       print_function(window,start_print);
+       start_print=0;//Printa bara brädet när det behövs
 
-       print_function(window);
 
-
-        window.display();
     }
 
     return 0;
