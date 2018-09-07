@@ -1,14 +1,13 @@
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "WhiteKing.h"
+#include "Whitepawn.h"
 
 
 
-sf::Sprite whiteKing::wksetvar()   //Här måste vi returna sf::sprite
+sf::Sprite whitePawn::wksetvar()   //Här måste vi returna sf::sprite
 {
               sf::Image whiteKnight;
-        if (!(whiteKnight.loadFromFile("../Figures/whiteKing.png")))
+        if (!(whiteKnight.loadFromFile("../Figures/whitePawn.png")))
                 std::cout << "Cannot load whiteKing image"; //Load Image
 
         sf::Texture textureWhiteKnight;   //Load Texture from image
@@ -19,17 +18,17 @@ sf::Sprite whiteKing::wksetvar()   //Här måste vi returna sf::sprite
 
 }
 
- sf::Sprite whiteKing::wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const{ //Här måste vi returna sf::sprite
+ sf::Sprite whitePawn::wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const{ //Här måste vi returna sf::sprite
 
 spriteWhiteKnight.setPosition(84.375*x+12,84.375*y+12);
 return spriteWhiteKnight;
 
 }
 
- void whiteKing::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+ void whitePawn::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
 
         sf::Image whiteKnight;
-        if (!(whiteKnight.loadFromFile("../Figures/whiteKing.png")))
+        if (!(whiteKnight.loadFromFile("../Figures/whitePawn.png")))
         std::cout << "Cannot load whiteKing image"; //Load Image
         sf::Texture textureWhiteKnight;   //Load Texture from image
         textureWhiteKnight.loadFromImage(whiteKnight);

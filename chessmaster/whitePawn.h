@@ -1,6 +1,8 @@
 
 
-class whiteKing{
+
+
+class whitePawn{
 public:
 sf::Sprite wksetvar();
  sf::Sprite wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const;

@@ -411,11 +411,14 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536314293 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1536315881 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"WhiteKing.h"
 	"chessboard.h"
+	"WhiteBishop.h"
+	"whiteKnight.h"
+	"whitePawn.H"
 
 1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -826,12 +829,12 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536314282 source:c:\users\sj930516\chessgame\chessmaster\whiteking.cpp
+1536315287 source:c:\users\sj930516\chessgame\chessmaster\whiteking.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"WhiteKing.h"
 
-1536310258 c:\users\sj930516\chessgame\chessmaster\whiteking.h
+1536315287 c:\users\sj930516\chessgame\chessmaster\whiteking.h
 
 1536314187 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
 	<SFML/Graphics.hpp>
@@ -839,4 +842,39 @@
 	"chessboard.h"
 
 1536313970 c:\users\sj930516\chessgame\chessmaster\chessboard.h
+
+1536314921 source:c:\users\sj930516\chessgame\chessmaster\whitebishop.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"WhiteBishop.h"
+
+1536314708 c:\users\sj930516\chessgame\chessmaster\whitebishop.h
+
+1536315962 source:c:\users\sj930516\chessgame\chessmaster\whitepawn.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Whitepawn.h"
+
+1536315962 source:c:\users\sj930516\chessgame\chessmaster\whitequeen.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"whiteQueen.h"
+
+1536316140 source:c:\users\sj930516\chessgame\chessmaster\whiterook.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"whiteRook.h"
+
+1536315550 source:c:\users\sj930516\chessgame\chessmaster\whiteknight.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Whiteknight.h"
+
+1536315323 c:\users\sj930516\chessgame\chessmaster\whiteknight.h
+
+1536315656 c:\users\sj930516\chessgame\chessmaster\whitepawn.h
+
+1536315962 c:\users\sj930516\chessgame\chessmaster\whitequeen.h
+
+1536316139 c:\users\sj930516\chessgame\chessmaster\whiterook.h
 
