@@ -5,8 +5,8 @@
 class whiteKnight{
 public:
 sf::Sprite wksetvar();
- sf::Sprite wksetPos(int x, int y,sf::Sprite &spriteWhiteKnight);
-void wkdraw(sf::RenderWindow &window, sf::Sprite &spriteWhiteKnight);
+ sf::Sprite wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const;
+void wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight);
 
 };
 
@@ -20,16 +20,20 @@ sf::Sprite whiteKnight::wksetvar()   //Här måste vi returna sf::sprite
         textureWhiteKnight.loadFromImage(whiteKnight);
         sf::Sprite spriteWhiteKnight;
         spriteWhiteKnight.setTexture(textureWhiteKnight);
+      return spriteWhiteKnight;
+}
+
+ sf::Sprite whiteKnight::wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const{ //Här måste vi returna sf::sprite
+spriteWhiteKnight.setPosition(105*1,133*2);
 return spriteWhiteKnight;
 }
 
- sf::Sprite whiteKnight::wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight){ //Här måste vi returna sf::sprite
-
-spriteWhiteKnight.setPosition(84*x,84*y);
-return spriteWhiteKnight;
-}
-
- void whiteKnight::wkdraw(sf::RenderWindow &window, sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+ void whiteKnight::wkdraw(sf::RenderWindow &window,const  sf::Sprite &spriteWhiteKnight){ //Här ska inget returnas
+        sf::Image whiteKnight;
+        if (!(whiteKnight.loadFromFile("../Figures/whiteKing.png")))
+        std::cout << "Cannot load whiteKing image"; //Load Image
+        sf::Texture textureWhiteKnight;   //Load Texture from image
+        textureWhiteKnight.loadFromImage(whiteKnight);
 window.draw(spriteWhiteKnight);
 }
 
