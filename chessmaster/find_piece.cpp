@@ -5,13 +5,15 @@
 #include <map>
 #include <string>
 
-int piece_pos(std::string piece_name) //Here we save the posistion of all the values
+int piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
 {
 
 //högst upp till vänster är 1, längst ned till höger är 64
   int location;
+
    std::map<std::string,int> memory_map;
-  memory_map["bp1"]=9;
+   if(init==init ){
+  memory_map["bp1"]=9 ;
   memory_map["bp2"]=10;
   memory_map["bp3"]=11;
   memory_map["bp4"]=12;
@@ -29,6 +31,7 @@ int piece_pos(std::string piece_name) //Here we save the posistion of all the va
   memory_map["br1"]=1;
   memory_map["br2"]=8;
 
+//Svarta över ^, vita V
 
   memory_map["wp1"]=49;
   memory_map["wp2"]=50;
@@ -47,7 +50,11 @@ int piece_pos(std::string piece_name) //Here we save the posistion of all the va
   memory_map["wk2"]=58;
   memory_map["wr1"]=57;
   memory_map["wr2"]=64;
+   }
+   else {
+   //memory_map[piece_name]= memory_map[piece_name] + move;
 
+   }
   location = memory_map[piece_name];
 
 return location;

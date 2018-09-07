@@ -17,10 +17,11 @@ piece_name="bp1";
 int start_print;
  start_print =1;
  window.clear();
+std::cout<<piece_pos(piece_name,0,1)<<std::endl;
     while (window.isOpen())
     {
      sf::Event event;
-std::cout<<piece_pos(piece_name)<<std::endl;
+std::cout<<piece_pos(piece_name,0,0)<<std::endl;
                 while (window.pollEvent(event))
                 {
                         if (event.type == sf::Event::Closed)
