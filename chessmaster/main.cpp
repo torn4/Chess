@@ -7,7 +7,7 @@
 #include <string>
 #include <math.h>
 #include <time.h>
-
+#include "button_press.h"
 int main()
 {
 
@@ -22,16 +22,22 @@ int start_print;
 memory_map = cp.piece_pos(piece_name,0,1);
 int count2 = 0;
 int count1=0;
+
 //std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
     while (window.isOpen())
     {
+
      sf::Event event;
+
                 while (window.pollEvent(event))
                 {
                         if (event.type == sf::Event::Closed)
                                 window.close();
 
                         }//Event handling done
+
+        find_button_pos(window, event);
+
 
 
        memory_map = cp.piece_pos(piece_name,count1,0);
@@ -40,7 +46,8 @@ int count1=0;
        start_print=1;//Printa bara brädet när det behövs
 
 
-    }
 
+
+    }
     return 0;
 }
