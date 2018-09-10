@@ -7,7 +7,16 @@
 void print_function(sf::RenderWindow &window, int start)
 {
 
-
+ int test; //Funktion som hittar rätt kordinat
+ test=56;
+ if(test%8==0){
+ std::cout<<"Height is: "<<test/8-1<<std::endl;
+  std::cout<<"width is: "<<7<<std::endl;
+ } else{ //0 index board
+  std::cout<<"Number is: "<<test <<std::endl;
+ std::cout<<"Height is: "<<test/8<<std::endl;
+ std::cout<<"width is: "<<test%8-1<<std::endl;
+ }
         sf::Sprite whiteRookn;
         sf::Sprite spriteBoard;
         whiteRook wr;

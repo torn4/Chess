@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536328541 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1536564724 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -419,6 +419,7 @@
 	"print_sfml.h"
 	"find_piece.h"
 	<string>
+	<math.h>
 
 1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -886,7 +887,7 @@
 
 1536323480 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1536328483 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1536563705 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -894,5 +895,5 @@
 	<map>
 	<string>
 
-1536328303 c:\users\sj930516\chessgame\chessmaster\find_piece.h
+1536563705 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 
