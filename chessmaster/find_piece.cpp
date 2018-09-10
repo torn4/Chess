@@ -6,6 +6,8 @@
 #include <string>
 #include "print_sfml.h"
 
+
+
 std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
 {
 
@@ -50,12 +52,22 @@ std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int mov
   memory_map["wk2"]=58;
   memory_map["wr1"]=57;
   memory_map["wr2"]=64;
+  white=1;
    }
    else {
-   memory_map[piece_name]=  move;
-   //std::cout<<memory_map[piece_name]<<std::endl;
+
+
+    if(piece_name.length()>0){ //Kollar vitt eller svarts drag
+        if(piece_name.at(0)=='w' && white ==1){
+        memory_map[piece_name]=  move;
+        white=0;
+        }else if(piece_name.at(0)=='b' && white ==0) {
+        memory_map[piece_name]=  move;
+        white=1;
+        } else if(piece_name.at(0)=='b' && white ==1 || piece_name.at(0)=='w' && white ==0){
+        std::cout<<"It is not your turn yet!"<<std::endl;
+        }
+    }
    }
-
-
 return memory_map;
 }

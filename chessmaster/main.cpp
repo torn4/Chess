@@ -39,7 +39,7 @@ int count1=0;
                         }//Event handling done
 
       piecepos =  bp.find_button_pos(window, event,memory_map);
-
+//Nu måste vi kolla om det här får göras
 
 
         memory_map = cp.piece_pos(piecepos.first,piecepos.second,0);

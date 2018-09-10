@@ -64,7 +64,7 @@ int chess_place;
     for(int i =0;i<33;i++){
 
         if(memory_map[id_memory[i]]==chess_place){
-        std::cout<<"found piece : "<<id_memory[i]<<" at: "<<  chess_place <<std::endl;
+    //    std::cout<<"found piece : "<<id_memory[i]<<" at: "<<  chess_place <<std::endl;
         piece_name=id_memory[i];
         found_button=0;
         //När jag hittat ID kan jag lämna ID till main, sen ge ID + nya posen till print_sfml
@@ -78,7 +78,7 @@ int chess_place;
     x=pixelPosres.x;
     y=pixelPosres.y;
     chess_place = round((y-42)/84.375)*8+round((x-42)/84.375)+1;
-    std::cout<<"Droping piece: "<<piece_name <<" at: "<<  chess_place <<std::endl;
+  //  std::cout<<"Droping piece: "<<piece_name <<" at: "<<  chess_place <<std::endl;
     found_button=1;
     piecepos.first = piece_name;
     piecepos.second = chess_place;
