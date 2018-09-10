@@ -6,7 +6,7 @@
 #include "find_piece.h"
 #include <string>
 #include <math.h>
-
+#include <time.h>
 
 int main()
 {
@@ -19,9 +19,10 @@ piece_name="bp2";
 int start_print;
  start_print =1;
  window.clear();
-
-
-std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
+memory_map = cp.piece_pos(piece_name,0,1);
+int count2 = 0;
+int count1=0;
+//std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
     while (window.isOpen())
     {
      sf::Event event;
@@ -32,8 +33,11 @@ std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man s
 
                         }//Event handling done
 
-       print_function(window,start_print);
-       start_print=0;//Printa bara brädet när det behövs
+
+       memory_map = cp.piece_pos(piece_name,count1,0);
+       print_function(window,start_print,memory_map);
+
+       start_print=1;//Printa bara brädet när det behövs
 
 
     }

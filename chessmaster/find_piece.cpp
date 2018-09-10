@@ -4,12 +4,12 @@
 #include <vector>
 #include <map>
 #include <string>
+#include "print_sfml.h"
 
-int chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
+std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
 {
 
 //högst upp till vänster är 1, längst ned till höger är 64
-  int location;
 
    if(init==1 ){
   memory_map["bp1"]=9 ;
@@ -23,8 +23,8 @@ int chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we
 
   memory_map["bb1"]=6;
   memory_map["bb2"]=3;
-  memory_map["bkk"]=4;
-  memory_map["bq"]=5;
+  memory_map["bkk"]=5;
+  memory_map["bq"]=4;
   memory_map["bk1"]=2;
   memory_map["bk2"]=7;
   memory_map["br1"]=1;
@@ -32,7 +32,7 @@ int chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we
 
 //Svarta över ^, vita V
 
-  memory_map["wp1"]=49;
+  memory_map["wp1"]=49;//49
   memory_map["wp2"]=50;
   memory_map["wp3"]=51;
   memory_map["wp4"]=52;
@@ -52,9 +52,9 @@ int chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we
    }
    else {
    memory_map[piece_name]= memory_map[piece_name] + move;
-std::cout<<memory_map[piece_name]<<std::endl;
+   //std::cout<<memory_map[piece_name]<<std::endl;
    }
-  location = memory_map[piece_name];
 
-return location;
+
+return memory_map;
 }

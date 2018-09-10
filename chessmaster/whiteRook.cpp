@@ -19,9 +19,17 @@ sf::Sprite whiteRook::wksetvar()   //Här måste vi returna sf::sprite
 
 }
 
- sf::Sprite whiteRook::wksetPos(int x, int y, sf::Sprite &spriteWhiteKnight)const{ //Här måste vi returna sf::sprite
-
-spriteWhiteKnight.setPosition(84.375*x+12,84.375*y+12);
+ sf::Sprite whiteRook::wksetPos(int number, sf::Sprite &spriteWhiteKnight)const{ //Här måste vi returna sf::sprite
+     int height;
+     int width;
+    if(number%8==0){
+    width=7;
+    height = number/8-1;
+    } else{ //0 index board
+    width = number%8-1;
+    height = number/8;
+    }
+spriteWhiteKnight.setPosition(84.375*width+12,84.375*height+12);
 return spriteWhiteKnight;
 
 }
