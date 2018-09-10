@@ -11,6 +11,7 @@ std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int mov
 
 //högst upp till vänster är 1, längst ned till höger är 64
 
+
    if(init==1 ){
   memory_map["bp1"]=9 ;
   memory_map["bp2"]=10;
@@ -51,7 +52,7 @@ std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int mov
   memory_map["wr2"]=64;
    }
    else {
-   memory_map[piece_name]= memory_map[piece_name] + move;
+   memory_map[piece_name]=  move;
    //std::cout<<memory_map[piece_name]<<std::endl;
    }
 

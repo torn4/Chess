@@ -8,19 +8,21 @@
 #include <math.h>
 #include <time.h>
 #include "button_press.h"
+#include <utility>
 int main()
 {
 
    std::map<std::string,int> memory_map;
 sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board");// Rutan som brädet ska ligga i
 chessPieces cp;
+button_pess bp;
 std::string piece_name;
-piece_name="bp2";
+piece_name="bpb2";
 int start_print;
  start_print =1;
  window.clear();
 memory_map = cp.piece_pos(piece_name,0,1);
-int count2 = 0;
+std::pair<std::string,int>piecepos;
 int count1=0;
 
 //std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
@@ -36,11 +38,11 @@ int count1=0;
 
                         }//Event handling done
 
-        find_button_pos(window, event,memory_map);
+      piecepos =  bp.find_button_pos(window, event,memory_map);
 
 
 
-       memory_map = cp.piece_pos(piece_name,count1,0);
+        memory_map = cp.piece_pos(piecepos.first,piecepos.second,0);
        print_function(window,start_print,memory_map);
 
        start_print=1;//Printa bara brädet när det behövs
