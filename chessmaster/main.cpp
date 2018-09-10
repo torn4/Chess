@@ -36,7 +36,7 @@ int count1=0;
 
                         }//Event handling done
 
-        find_button_pos(window, event);
+        find_button_pos(window, event,memory_map);
 
 
 
