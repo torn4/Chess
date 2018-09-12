@@ -5,8 +5,32 @@
 #include <map>
 #include <string>
 #include "print_sfml.h"
+#include "pawn_rule.h"
+#include "Rook_rule.h"
+#include "Bishop_rule.h"
+
+bool chessPieces::move_ok(std::string piece_name, bool &white){ //Kollar svart/vitt
+bool move_allowed;
 
 
+    if(piece_name.length()>0){ //Kollar vitt eller svarts drag
+        if(piece_name.at(0)=='w' && white ==1){
+    move_allowed =1;
+        white=0;
+        }else if(piece_name.at(0)=='b' && white ==0) {
+        move_allowed=1;
+        white=1;
+        } else if((piece_name.at(0)=='b' && white ==1) ||( piece_name.at(0)=='w' && white ==0)){
+        std::cout<<"It is not your turn yet!"<<std::endl;
+        move_allowed=0;
+        }else{
+        move_allowed=0;
+        }
+         std::cout<<move_allowed<<std::endl;
+    }
+
+return move_allowed;
+}
 
 std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
 {
@@ -53,21 +77,46 @@ std::map<std::string,int> chessPieces::piece_pos(std::string piece_name, int mov
   memory_map["wr1"]=57;
   memory_map["wr2"]=64;
   white=1;
+  movep=0;
+  mover=0;
+  moveb=0;
+  moveq=0;
    }
-   else {
+   else if(piece_name.length()>0) {
 
+    pawn_rule pr; // Bondens regler
+    rook_rule rr;
+    bishop_rule br;
 
-    if(piece_name.length()>0){ //Kollar vitt eller svarts drag
-        if(piece_name.at(0)=='w' && white ==1){
-        memory_map[piece_name]=  move;
-        white=0;
-        }else if(piece_name.at(0)=='b' && white ==0) {
-        memory_map[piece_name]=  move;
-        white=1;
-        } else if(piece_name.at(0)=='b' && white ==1 || piece_name.at(0)=='w' && white ==0){
-        std::cout<<"It is not your turn yet!"<<std::endl;
-        }
+    if(piece_name.at(1)=='p'){
+    movep=pr.pawnRule(piece_name, memory_map,move);
+
+    }else if(piece_name.at(1)=='r'){
+    movep=rr.rookrule(piece_name,memory_map,move);
+
+    }else if(piece_name.at(1)=='b'){
+    movep=br.bishoprule(piece_name,memory_map,move);
+
+    }else{
+    movep=false;
+
     }
+
+    if(movep==true )
+    {
+    legal_move = move_ok( piece_name, white);
+    } else{
+    movep=false;
+    mover=false;
+    moveb=false;
+    moveq=false;
+    legal_move=false;
+    }
+
+    if(legal_move){
+    memory_map[piece_name]=move;
+    }
+
    }
 return memory_map;
 }

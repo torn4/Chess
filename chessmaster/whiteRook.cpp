@@ -29,6 +29,7 @@ sf::Sprite whiteRook::wksetvar()   //Här måste vi returna sf::sprite
     width = number%8-1;
     height = number/8;
     }
+
 spriteWhiteKnight.setPosition(84.375*width+12,84.375*height+12);
 return spriteWhiteKnight;
 
