@@ -9,6 +9,7 @@
 #include "Rook_rule.h"
 #include "Bishop_rule.h"
 #include "King_rule.h"
+#include "Knight_rule.h"
 
 
 bool chessPieces::move_ok(std::string piece_name, bool & white) { //Kollar svart/vitt
@@ -83,6 +84,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     rook_rule rr;
     bishop_rule br;
     king_rule kr;
+    knight_rule kn;
 
     if (piece_name.at(1) == 'p') {
       movep = pr.pawnRule(piece_name, memory_map, move);
@@ -96,8 +98,10 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     } else if (piece_name.at(1) == 'q') {
       movep = br.bishoprule(piece_name, memory_map, move) || rr.rookrule(piece_name, memory_map, move);
 
-    } else if (piece_name.at(1) == 'k') {
+    } else if (piece_name.at(1) == 'k' && piece_name.at(2) == 'k') {
       movep = kr.kingrule(piece_name, memory_map, move);
+    } else if (piece_name.at(1) == 'k' ) {
+        movep = kn.knightrule(piece_name, memory_map, move);
     } else {
       movep = false;
 
