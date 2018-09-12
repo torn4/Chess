@@ -43,7 +43,13 @@ id_memory=mem.keymem();
       memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0,  id_memory);
       print_function(window, 1, memory_map);
     }
-
+      if((memory_map["wkk"]== 70 || memory_map["bkk"]== 70) ){
+            std::cout << "Game over " <<std::endl;
+    return 0;
   }
+  }
+
+
+
   return 0;
 }
