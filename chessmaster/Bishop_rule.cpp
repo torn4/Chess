@@ -3,7 +3,7 @@
 #include <cmath>
 #include "Rule_piece_collision.h"
 #include <vector>
-bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector<std::string> id_memory) {
+bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
     bool move_allowedb;
 
     if (piece_name.length() > 0) {
@@ -14,9 +14,6 @@ bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int
       move_allowedb = false;
 
     }
-   collision crash;
-  if (move_allowedb) {//Kollar om en pjäs står där redan
-    move_allowedb = crash.piece_colission(memory_map, move, id_memory);
-  }
+
     return move_allowedb;
 }

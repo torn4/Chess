@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Rule_piece_collision.h"
 #include <vector>
-  bool king_rule::kingrule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector<std::string> id_memory) {
+  bool king_rule::kingrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
     bool move_allowedr;
     bool move_allowedf;
     bool move_alloweds;
@@ -26,11 +26,7 @@
       move_allowedf = false;
     }
 
-       collision crash;
-  if (move_allowedr || move_allowedf || move_alloweds) {//Kollar om en pjäs står där redan
-    clean = crash.piece_colission(memory_map, move, id_memory);
-  }
 
 
-    return (move_allowedr || move_allowedf || move_alloweds)&&clean;
+    return (move_allowedr || move_allowedf || move_alloweds);
   }

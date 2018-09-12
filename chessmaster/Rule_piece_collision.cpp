@@ -1,6 +1,6 @@
 #include "Rule_piece_collision.h"
 
-bool collision::piece_colission( std::map < std::string, int > memory_map, int move, std::vector < std::string > id_memory){
+bool collision::piece_colission( std::map < std::string, int > memory_map, int move, std::vector < std::string > id_memory, std::string piece_name){
 bool move_ok=false;
 int place;
     for (int i = 1; i < 33; i++) {

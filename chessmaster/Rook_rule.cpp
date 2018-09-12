@@ -1,7 +1,7 @@
 #include "Rook_rule.h"
 #include <iostream>
 #include "Rule_piece_collision.h"
-bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector<std::string> id_memory) {
+bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
   bool move_allowedr;
 
   int hn;
@@ -29,10 +29,6 @@ bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > m
 
   }
 
-   collision crash;
-  if (move_allowedr) {//Kollar om en pjäs står där redan
-    move_allowedr = crash.piece_colission(memory_map, move, id_memory);
-  }
 
   return move_allowedr;
 }

@@ -10,7 +10,8 @@
 #include "Bishop_rule.h"
 #include "King_rule.h"
 #include "Knight_rule.h"
-
+#include "Rule_take_piece.h"
+#include <utility>
 
 bool chessPieces::move_ok(std::string piece_name, bool & white) { //Kollar svart/vitt
   bool move_allowed;
@@ -85,27 +86,45 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     bishop_rule br;
     king_rule kr;
     knight_rule kn;
+std::pair<std::string,bool> take_true;
+      collision crash;
+      take_piece tk;
+
 
     if (piece_name.at(1) == 'p') {
-      movep = pr.pawnRule(piece_name, memory_map, move,id_memory);
+      movep = pr.pawnRule(piece_name, memory_map, move);
 
     } else if (piece_name.at(1) == 'r') {
-      movep = rr.rookrule(piece_name, memory_map, move,id_memory);
+      movep = rr.rookrule(piece_name, memory_map, move);
 
     } else if (piece_name.at(1) == 'b') {
-      movep = br.bishoprule(piece_name, memory_map, move,id_memory);
+      movep = br.bishoprule(piece_name, memory_map, move);
 
     } else if (piece_name.at(1) == 'q') {
-      movep = br.bishoprule(piece_name, memory_map, move,id_memory) || rr.rookrule(piece_name, memory_map, move,id_memory);
+      movep = br.bishoprule(piece_name, memory_map, move) || rr.rookrule(piece_name, memory_map, move);
 
     } else if (piece_name.at(1) == 'k' && piece_name.at(2) == 'k') {
-      movep = kr.kingrule(piece_name, memory_map, move,id_memory);
+      movep = kr.kingrule(piece_name, memory_map, move);
     } else if (piece_name.at(1) == 'k' ) {
-        movep = kn.knightrule(piece_name, memory_map, move,id_memory);
+        movep = kn.knightrule(piece_name, memory_map, move);
     } else {
       movep = false;
-
     }
+
+
+
+  if(movep){ //kolla om man ska ta pjäsen
+    take_true = tk.takepiece(memory_map,id_memory,piece_name,move);
+    if(take_true.second){
+memory_map[take_true.first] = 70;
+  }
+  }
+
+  if (movep) {//Kollar om en pjäs står där redan
+    movep = crash.piece_colission(memory_map, move, id_memory,  piece_name);
+  }
+
+
 
     if (movep == true) {
       legal_move = move_ok(piece_name, white);
