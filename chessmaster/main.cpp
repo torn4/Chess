@@ -9,22 +9,24 @@
 #include <time.h>
 #include "button_press.h"
 #include <utility>
+#include <vector>
+#include "key_memory.h"
 int main() {
-
+   std::vector<std::string>id_memory(33);
   std::map < std::string, int > memory_map;
   sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board"); // Rutan som brädet ska ligga i
+
+  key_mem mem;
   chessPieces cp;
   button_pess bp;
   std::string piece_name;
-  piece_name = "bpb2";
-  int start_print;
-  start_print = 1;
+  piece_name = "start";
   window.clear();
-  memory_map = cp.piece_pos(piece_name, 0, 1);
+id_memory=mem.keymem();
   std::pair < std::string, int > piecepos;
   int count1 = 0;
-
-  //std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
+  memory_map = cp.piece_pos(piece_name, 0, 1, id_memory);
+  print_function(window, 1, memory_map);
   while (window.isOpen()) {
 
     sf::Event event;
@@ -35,13 +37,12 @@ int main() {
 
     } //Event handling done
 
-    piecepos = bp.find_button_pos(window, event, memory_map);
-    //Nu måste vi kolla om det här får göras
+    piecepos = bp.find_button_pos(window, event, memory_map,id_memory);
 
-    memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0);
-    print_function(window, start_print, memory_map);
-
-    start_print = 1; //Printa bara brädet när det behövs
+    if (piecepos.first.length() > 0 ) {//Printa bara om vi måste
+      memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0,  id_memory);
+      print_function(window, 1, memory_map);
+    }
 
   }
   return 0;

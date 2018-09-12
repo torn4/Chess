@@ -12,17 +12,15 @@ void print_function(sf::RenderWindow & window, int start, std::map < std::string
 
   chessBoard cb;
   if (start) {
-    //    std::cout<<"First print"<<std::endl;
+
     spriteBoard = cb.chessBoardsetvar();
 
     cb.boardDraw(window, spriteBoard);
 
-    //number = memory_map["wr1"];
-
     whiteRookn = wr.wksetPos(memory_map["wr1"], whiteRookn); //Width & height
     wr.wkdraw(window, whiteRookn, "../Figures/whiteRook.png");
 
-    whiteRookn = wr.wksetPos(memory_map["wr2"], whiteRookn); //Width & height
+    whiteRookn = wr.wksetPos(memory_map["wr2"], whiteRookn);
     wr.wkdraw(window, whiteRookn, "../Figures/whiteRook.png");
     //White bonds
     whiteRookn = wr.wksetPos(memory_map["wp8"], whiteRookn);

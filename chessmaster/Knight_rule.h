@@ -1,8 +1,8 @@
 #include <map>
 #include <string>
-
+#include <vector>
 
 class knight_rule{
     public:
-bool knightrule(std::string piece_name, std::map<std::string,int> memory_map,int move);
+bool knightrule(std::string piece_name, std::map<std::string,int> memory_map,int move, std::vector<std::string> id_memory);
 };

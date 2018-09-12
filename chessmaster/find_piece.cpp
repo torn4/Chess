@@ -33,7 +33,7 @@ bool chessPieces::move_ok(std::string piece_name, bool & white) { //Kollar svart
   return move_allowed;
 }
 
-std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int move, int init) //Here we save the posistion of all the values
+std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int move, int init, std::vector<std::string> id_memory) //Here we save the posistion of all the values
 {
 
   //högst upp till vänster är 1, längst ned till höger är 64
@@ -78,7 +78,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     memory_map["wr2"] = 64;
     white = 1;
     movep = 0;
-  } else if (piece_name.length() > 0) {
+  } else if (piece_name.length() > 0 && memory_map[piece_name] != move) {
 
     pawn_rule pr; // Bondens regler
     rook_rule rr;
@@ -87,21 +87,21 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     knight_rule kn;
 
     if (piece_name.at(1) == 'p') {
-      movep = pr.pawnRule(piece_name, memory_map, move);
+      movep = pr.pawnRule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'r') {
-      movep = rr.rookrule(piece_name, memory_map, move);
+      movep = rr.rookrule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'b') {
-      movep = br.bishoprule(piece_name, memory_map, move);
+      movep = br.bishoprule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'q') {
-      movep = br.bishoprule(piece_name, memory_map, move) || rr.rookrule(piece_name, memory_map, move);
+      movep = br.bishoprule(piece_name, memory_map, move,id_memory) || rr.rookrule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'k' && piece_name.at(2) == 'k') {
-      movep = kr.kingrule(piece_name, memory_map, move);
+      movep = kr.kingrule(piece_name, memory_map, move,id_memory);
     } else if (piece_name.at(1) == 'k' ) {
-        movep = kn.knightrule(piece_name, memory_map, move);
+        movep = kn.knightrule(piece_name, memory_map, move,id_memory);
     } else {
       movep = false;
 

@@ -18,7 +18,7 @@ sf::Sprite whiteRook::wksetvar() //Här måste vi returna sf::sprite
 
 }
 
-sf::Sprite whiteRook::wksetPos(int number, sf::Sprite & spriteWhiteKnight) const { //Här måste vi returna sf::sprite
+sf::Sprite whiteRook::wksetPos(int number, sf::Sprite & spriteWhiteKnight) const {
   int height;
   int width;
   if (number % 8 == 0) {
@@ -29,7 +29,7 @@ sf::Sprite whiteRook::wksetPos(int number, sf::Sprite & spriteWhiteKnight) const
     height = number / 8;
   }
 
-  spriteWhiteKnight.setPosition(84.375 * width + 12, 84.375 * height + 12);
+  spriteWhiteKnight.setPosition(84.375 * width + 12, 84.375 * height + 12);//Räknar ut kordinater
   return spriteWhiteKnight;
 
 }

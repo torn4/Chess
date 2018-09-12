@@ -1,8 +1,9 @@
 
 #include "Knight_rule.h"
 #include <iostream>
-
-  bool knight_rule::knightrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
+#include "Rule_piece_collision.h"
+#include <vector>
+  bool knight_rule::knightrule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector<std::string> id_memory) {
     bool move_allowedr;
 std::cout<<"knight " <<std::endl;
 
