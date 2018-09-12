@@ -9,47 +9,40 @@
 #include <time.h>
 #include "button_press.h"
 #include <utility>
-int main()
-{
+int main() {
 
-   std::map<std::string,int> memory_map;
-sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board");// Rutan som brädet ska ligga i
-chessPieces cp;
-button_pess bp;
-std::string piece_name;
-piece_name="bpb2";
-int start_print;
- start_print =1;
- window.clear();
-memory_map = cp.piece_pos(piece_name,0,1);
-std::pair<std::string,int>piecepos;
-int count1=0;
+  std::map < std::string, int > memory_map;
+  sf::RenderWindow window(sf::VideoMode(675, 675), "Playing board"); // Rutan som brädet ska ligga i
+  chessPieces cp;
+  button_pess bp;
+  std::string piece_name;
+  piece_name = "bpb2";
+  int start_print;
+  start_print = 1;
+  window.clear();
+  memory_map = cp.piece_pos(piece_name, 0, 1);
+  std::pair < std::string, int > piecepos;
+  int count1 = 0;
 
-//std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
-    while (window.isOpen())
-    {
+  //std::cout<<cp.piece_pos(piece_name,0,1)<<std::endl; // namn på pjäs, värde man ska plussa, init eller ej
+  while (window.isOpen()) {
 
-     sf::Event event;
+    sf::Event event;
 
-                while (window.pollEvent(event))
-                {
-                        if (event.type == sf::Event::Closed)
-                                window.close();
+    while (window.pollEvent(event)) {
+      if (event.type == sf::Event::Closed)
+        window.close();
 
-                        }//Event handling done
+    } //Event handling done
 
-      piecepos =  bp.find_button_pos(window, event,memory_map);
-//Nu måste vi kolla om det här får göras
+    piecepos = bp.find_button_pos(window, event, memory_map);
+    //Nu måste vi kolla om det här får göras
 
+    memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0);
+    print_function(window, start_print, memory_map);
 
-        memory_map = cp.piece_pos(piecepos.first,piecepos.second,0);
-       print_function(window,start_print,memory_map);
+    start_print = 1; //Printa bara brädet när det behövs
 
-       start_print=1;//Printa bara brädet när det behövs
-
-
-
-
-    }
-    return 0;
+  }
+  return 0;
 }

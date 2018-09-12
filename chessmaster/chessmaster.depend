@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536585383 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1536735602 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -840,7 +840,7 @@
 
 1536315287 c:\users\sj930516\chessgame\chessmaster\whiteking.h
 
-1536320318 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
+1536735537 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -864,7 +864,7 @@
 	<iostream>
 	"whiteQueen.h"
 
-1536672955 source:c:\users\sj930516\chessgame\chessmaster\whiterook.cpp
+1536735655 source:c:\users\sj930516\chessgame\chessmaster\whiterook.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"whiteRook.h"
@@ -882,7 +882,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\whiterook.h
 
-1536571770 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
+1536735691 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -890,7 +890,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1536733503 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1536735558 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -901,11 +901,12 @@
 	"pawn_rule.h"
 	"Rook_rule.h"
 	"Bishop_rule.h"
+	"King_rule.h"
 
 1536664744 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 	<map>
 
-1536587346 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
+1536735528 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
 	<vector>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -915,10 +916,10 @@
 	<map>
 	<utility>
 
-1536585660 c:\users\sj930516\chessgame\chessmaster\button_press.h
+1536735725 c:\users\sj930516\chessgame\chessmaster\button_press.h
 	<utility>
 
-1536733424 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1536735615 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
 
@@ -926,7 +927,7 @@
 	<map>
 	<string>
 
-1536733306 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
+1536735641 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
 	<iostream>
 
@@ -934,7 +935,7 @@
 	<map>
 	<string>
 
-1536733374 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1536735569 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>
@@ -952,4 +953,12 @@
 1536732940 c:\users\sj930516\chessgame\chessmaster\queen_rule.h
 	<map>
 	<string>
+
+1536734880 c:\users\sj930516\chessgame\chessmaster\king_rule.h
+	<map>
+	<string>
+
+1536735586 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
+	"King_rule.h"
+	<iostream>
 
