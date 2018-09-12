@@ -892,7 +892,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1536748853 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1536756149 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -926,15 +926,19 @@
 	<utility>
 	<vector>
 
-1536747954 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1536755398 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
+	<string>
+	<iostream>
+	"Rule_take_piece.h"
 
-1536747983 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
+1536754268 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
 	<map>
 	<string>
 	<vector>
 	"Rule_piece_collision.h"
+	<utility>
 
 1536747954 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
@@ -1007,10 +1011,11 @@
 	<map>
 	<vector>
 
-1536748679 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
+1536749075 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
 	<utility>
 	"Rule_take_piece.h"
 	<string>
+	<iostream>
 
 1536748656 c:\users\sj930516\chessgame\chessmaster\rule_take_piece.h
 	<map>

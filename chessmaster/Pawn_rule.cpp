@@ -1,11 +1,12 @@
 #include "Pawn_rule.h"
 #include <iostream>
-
-
+#include <string>
+#include <iostream>
+#include "Rule_take_piece.h"
 bool pawn_rule::pawnRule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
   bool move_allowedp;
 
-  int place = 0;
+
   if (piece_name.length() > 0) { //Kollar om bonden kan röra sig dit
     if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 8) {
       move_allowedp = true;
@@ -17,11 +18,32 @@ bool pawn_rule::pawnRule(std::string piece_name, std::map < std::string, int > m
       move_allowedp = true;
     } else {
       move_allowedp = false;
-      std::cout << "A Pawn cannot move this way" << std::endl;
     }
+
+  }
+   return move_allowedp;
+}
+
+ std::pair<std::string,bool> pawn_rule::takePawn(std::map<std::string,int> memory_map,std::vector<std::string>id_memory,std::string piece_name,int move){
+    std::pair<std::string,bool> take_true;
+   take_piece tp;
+      if (piece_name.length() > 0) { //Kollar om bonden kan röra sig dit
+    if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 9) {
+     take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
+    } else if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 7 ) {
+     take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
+    } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 9) {
+     take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
+    } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 7 ) {
+     take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
+    } else {
+      take_true.second = false;
+
+    }
+
   }
 
-
-
-  return move_allowedp;
+  return take_true;
 }
+
+
