@@ -940,7 +940,7 @@
 	"Rule_piece_collision.h"
 	<utility>
 
-1536826028 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
+1536827463 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
 	<iostream>
 	"Rule_piece_collision.h"
@@ -951,7 +951,7 @@
 	<string>
 	<vector>
 
-1536826183 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1536826488 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>

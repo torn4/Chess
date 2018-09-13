@@ -20,24 +20,32 @@ bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > m
   }
 
   if ((memory_map[piece_name] - move) % 8 == 0) { //upp o ned
-    for (int i = 1; i < 33; i++) { //
-      piece_in_the_way = memory_map[id_memory[i]];
-      if ((((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && memory_map[piece_name] != piece_in_the_way) && piece_in_the_way % 8 == move % 8) { // Kollar om man kan gå upp
-        return false;
-      } else if (((((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && memory_map[piece_name] != piece_in_the_way)) && piece_in_the_way % 8 == move % 8) {
-        return false;
+
+      for (int i = 1; i < 33; i++) { //
+        piece_in_the_way = memory_map[id_memory[i]];
+        if ((((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)&& piece_in_the_way != move) { // Kollar om man kan gå upp
+          return false;
+          break;
+        } else if ((((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)&& piece_in_the_way != move) {
+          return false;
+          break;
+        }
       }
-    }
+
     return true;
   } else if (hp == hn) { // sidled
-    for (int i = 1; i < 33; i++) { //
-      piece_in_the_way = memory_map[id_memory[i]];
-      if (((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && memory_map[piece_name] != piece_in_the_way) { // Kollar om man kan gå åt sidan
-        return false;
-      } else if ((((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && memory_map[piece_name] != piece_in_the_way)) {
-        return false;
+
+      for (int i = 1; i < 33; i++) { //
+        piece_in_the_way = memory_map[id_memory[i]];
+        if (((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && (memory_map[piece_name] != piece_in_the_way) && piece_in_the_way != move ) { // Kollar om man kan gå åt sidan
+          return false;
+          break;
+        } else if (((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && (memory_map[piece_name] != piece_in_the_way) && piece_in_the_way != move ) {
+          return false;
+          break;
+        }
       }
-    }
+
     return true;
   }
   return false;
