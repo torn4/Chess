@@ -90,33 +90,29 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     std::pair < std::string, bool > take_true;
     take_true.first = "0";
     take_true.second = false;
-
+      movep = false;
+      moveq = false;
     if (piece_name.at(1) == 'p') { //Kollar regler för varje pjäs
       movep = pr.pawnRule(piece_name, memory_map, move);
       take_true = pr.takePawn(memory_map, id_memory, piece_name, move);
     } else if (piece_name.at(1) == 'r') {
-      movep = rr.rookrule(piece_name, memory_map, move);
+      movep = rr.rookrule(piece_name, memory_map, move, id_memory);
 
     } else if (piece_name.at(1) == 'b') {
-      movep = br.bishoprule(piece_name, memory_map, move);
+      movep = br.bishoprule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'q') {
-      movep = br.bishoprule(piece_name, memory_map, move) || rr.rookrule(piece_name, memory_map, move);
+      movep = br.bishoprule(piece_name, memory_map, move,id_memory) || rr.rookrule(piece_name, memory_map, move,id_memory);
 
     } else if (piece_name.at(1) == 'k' && piece_name.at(2) == 'k') {
       movep = kr.kingrule(piece_name, memory_map, move);
     } else if (piece_name.at(1) == 'k') {
       movep = kn.knightrule(piece_name, memory_map, move);
-
-    } else {
-      movep = false;
-      moveq = false;
     }
 
     if (movep && piece_name.at(1) != 'p' || take_true.second) { //kolla om man ska ta pjäsen
       take_true = tk.takepiece(memory_map, id_memory, piece_name, move);
       moveq = false;
-
     }
 
     if (movep) { //Kollar om en pjäs står där redan
@@ -127,7 +123,6 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       movep = move_ok(piece_name, white);
     } else {
       movep = false;
-      legal_move = false;
       take_true.second = false;
     }
 
@@ -136,7 +131,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
     }
 
     if (movep) {
-      memory_map[piece_name] = move;
+    memory_map[piece_name] = move;
     }
 
   }
