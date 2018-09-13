@@ -1,1 +1,1 @@
-This is a chess playing software. I am using SMFL and Code::Blocks (MinGW) which i do not own.
+Trying to optimize the code and make it more readable
