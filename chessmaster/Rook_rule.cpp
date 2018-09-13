@@ -23,10 +23,11 @@ bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > m
 
       for (int i = 1; i < 33; i++) { //
         piece_in_the_way = memory_map[id_memory[i]];
-        if ((((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)&& piece_in_the_way != move) { // Kollar om man kan gå upp
+
+        if (((memory_map[piece_name] > piece_in_the_way) && (piece_in_the_way > move) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)) { // Kollar om man kan gå upp&& piece_in_the_way != move
           return false;
           break;
-        } else if ((((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)&& piece_in_the_way != move) {
+        } else if ((((memory_map[piece_name] < piece_in_the_way)  && (piece_in_the_way < move)) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 8 == move % 8)) {
           return false;
           break;
         }
@@ -37,10 +38,10 @@ bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > m
 
       for (int i = 1; i < 33; i++) { //
         piece_in_the_way = memory_map[id_memory[i]];
-        if (((memory_map[piece_name] < piece_in_the_way) == false && (piece_in_the_way < move) == false) && (memory_map[piece_name] != piece_in_the_way) && piece_in_the_way != move ) { // Kollar om man kan gå åt sidan
+        if (((memory_map[piece_name] > piece_in_the_way) && (piece_in_the_way > move)) && (memory_map[piece_name] != piece_in_the_way)  ) { // Kollar om man kan gå åt sidan
           return false;
           break;
-        } else if (((memory_map[piece_name] > piece_in_the_way) == false && (piece_in_the_way > move) == false) && (memory_map[piece_name] != piece_in_the_way) && piece_in_the_way != move ) {
+        } else if (((memory_map[piece_name] < piece_in_the_way) && (piece_in_the_way < move) ) && (memory_map[piece_name] != piece_in_the_way)  ) {
           return false;
           break;
         }
