@@ -17,7 +17,5 @@ int place=0;
         break;
       }
     }
-
  return name_take;
-
  }

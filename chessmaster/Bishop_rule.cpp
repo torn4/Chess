@@ -18,7 +18,6 @@ bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int
           break;
         }
       }
-
     return true;
   } else if (((memory_map[piece_name] - move) % 7) == 0){
               for (int i = 1; i < 33; i++) { //
@@ -34,8 +33,5 @@ bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int
       }
     return true;
   }
-
-
-
   return false;
 }
