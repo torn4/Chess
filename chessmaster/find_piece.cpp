@@ -79,7 +79,6 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       white = 1;
       movep = 0;
    } else if (piece_name.length() > 0 && memory_map[piece_name] != move) {
-
       pawn_rule pr; // Bondens regler
       rook_rule rr;
       bishop_rule br;
@@ -89,6 +88,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       take_piece tk;
       std::pair < std::string, bool > take_true;
       std::pair <bool,int>castling_rule;
+
       take_true.first = "0";
       take_true.second = false;
       castling_rule.first = 0;
@@ -98,7 +98,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       if (piece_name.at(1) == 'p') { //Kollar regler för varje pjäs
          movep = pr.pawnRule(piece_name, memory_map, move);
          take_true = pr.takePawn(memory_map, id_memory, piece_name, move);
-         std::cout<<"hej1"<<std::endl;
+
       } else if (piece_name.at(1) == 'r') {
          movep = rr.rookrule(piece_name, memory_map, move, id_memory);
 
@@ -121,7 +121,6 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       } else if(piece_name.at(1) == 'k' && piece_name.at(2) == 'k'){ // Kollar om vi ska castla
        castling_rule = kr.castle(piece_name, memory_map, move,id_memory);
        movep = castling_rule.first;
-              std::cout<<"hej2"<<movep<<std::endl;
       }
 
       if (movep == true || take_true.second) { //kollar vems tur det är

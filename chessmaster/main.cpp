@@ -19,7 +19,7 @@ int main() {
    key_mem mem;
    chessPieces cp;
    button_pess bp;
-   std::string piece_name;
+   std::string piece_name; //
    piece_name = "start";
    window.clear();
    id_memory = mem.keymem();
