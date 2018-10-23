@@ -33,7 +33,7 @@ bool chessPieces::move_ok(std::string piece_name, bool & white) { //Kollar svart
    return move_allowed;
 }
 
-std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int move, int init, std::vector < std::string > id_memory) //Here we save the posistion of all the values
+std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int move, int init, std::vector < std::string > id_memory) //Here we save the posistion of all the values
 {
 
    //högst upp till vänster är 1, längst ned till höger är 64
@@ -96,7 +96,7 @@ std::map < std::string, int > chessPieces::piece_pos(std::string piece_name, int
       movep = false;
       moveq = false;
       if (piece_name.at(1) == 'p') { //Kollar regler för varje pjäs
-         movep = pr.pawnRule(piece_name, memory_map, move);
+         movep = pr.pawnRule(piece_name, memory_map, move,id_memory);
          take_true = pr.takePawn(memory_map, id_memory, piece_name, move);
 
       } else if (piece_name.at(1) == 'r') {

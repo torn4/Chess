@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536758934 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1540290374 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -425,6 +425,7 @@
 	<utility>
 	<vector>
 	"key_memory.h"
+	"chess_ai_main.h"
 
 1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -892,7 +893,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1537173521 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1540289344 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -908,10 +909,10 @@
 	"Rule_take_piece.h"
 	<utility>
 
-1537173528 c:\users\sj930516\chessgame\chessmaster\find_piece.h
+1540283273 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 	<map>
 
-1537174339 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
+1537189889 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
 	<vector>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -922,18 +923,19 @@
 	<utility>
 	"key_memory.h"
 
-1536741453 c:\users\sj930516\chessgame\chessmaster\button_press.h
+1540282822 c:\users\sj930516\chessgame\chessmaster\button_press.h
 	<utility>
 	<vector>
+	<map>
 
-1536758443 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1540290042 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
 	<string>
 	<iostream>
 	"Rule_take_piece.h"
 
-1536757016 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
+1540289868 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
 	<map>
 	<string>
 	<vector>
@@ -951,7 +953,7 @@
 	<string>
 	<vector>
 
-1536834471 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1537189889 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>
@@ -973,25 +975,25 @@
 	<map>
 	<string>
 
-1537169217 c:\users\sj930516\chessgame\chessmaster\king_rule.h
+1540291297 c:\users\sj930516\chessgame\chessmaster\king_rule.h
 	<map>
 	<string>
 	<vector>
 	<utility>
 
-1537172675 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
+1537189889 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
 	"King_rule.h"
 	<iostream>
 	"Rule_piece_collision.h"
 	<vector>
 	<utility>
 
-1536757016 c:\users\sj930516\chessgame\chessmaster\knight_rule.h
+1540291301 c:\users\sj930516\chessgame\chessmaster\knight_rule.h
 	<map>
 	<string>
 	<vector>
 
-1537173464 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
+1540291311 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
 	"Knight_rule.h"
 	<iostream>
 	"Rule_piece_collision.h"
@@ -1014,7 +1016,7 @@
 	<map>
 	<vector>
 
-1536834471 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
+1537189889 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
 	<utility>
 	"Rule_take_piece.h"
 	<string>
@@ -1027,4 +1029,19 @@
 	<utility>
 
 1536321580 source:c:\users\sj930516\chessgame\chessmaster\print_smfl.cpp
+
+1536650833 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.c
+	"Pawn_rule.h"
+
+1540286620 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
+	"chess_ai_main.h"
+	<stdlib.h >
+	<time.h>
+	<iostream>
+
+1540283762 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
+	<utility>
+	<string>
+	<vector>
+	<map>
 

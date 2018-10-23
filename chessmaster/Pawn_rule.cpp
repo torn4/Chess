@@ -3,7 +3,8 @@
 #include <string>
 #include <iostream>
 #include "Rule_take_piece.h"
-bool pawn_rule::pawnRule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
+
+bool pawn_rule::pawnRule(std::string piece_name, std::map < std::string, int > memory_map, int move,std::vector<std::string>id_memory) {
   bool move_allowedp;
 
 move_allowedp = false;
@@ -18,9 +19,16 @@ move_allowedp = false;
       move_allowedp = true;
     }
   }
-   return move_allowedp;
+  if(move_allowedp && piece_name.at(0) == 'w'){
+    for (int i = 1; i < 33; i++) { //
+    piece_in_the_way = memory_map[id_memory[i]];
+    if(piece_in_the_way==move){
+        return false;
+    }
+    }
 }
-
+  return move_allowedp;
+}
  std::pair<std::string,bool> pawn_rule::takePawn(std::map<std::string,int> memory_map,std::vector<std::string>id_memory,std::string piece_name,int move){
     std::pair<std::string,bool> take_true;
    take_piece tp;
