@@ -31,7 +31,7 @@ int main() {
    std::pair < std::string, int > piecepos;
    int count1 = 0;
    bool white =1;
-   memory_map = cp.piece_pos(piece_name, 0, 1, id_memory);
+   memory_map = cp.piece_pos(piece_name, 0, 1,  id_memory);
    memory_map_old = memory_map;
    print_function(window, 1, memory_map);
    while (window.isOpen()) {
@@ -50,8 +50,8 @@ if(white==1){
    piecepos = ai.aimove(memory_map,id_memory);
 }
 
-     if (piecepos.first.length() > 0) { //Printa bara om vi måste
-       memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0, id_memory);
+     if (piecepos.first.length() > 0 && piecepos.first != "gone") { //Printa bara om vi måste
+       memory_map = cp.piece_pos(piecepos.first, piecepos.second, 0,  id_memory);
        print_function(window, 1, memory_map);
        if(memory_map_old!=memory_map){
        memory_map_old = memory_map;

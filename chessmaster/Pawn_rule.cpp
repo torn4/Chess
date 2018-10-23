@@ -19,8 +19,8 @@ move_allowedp = false;
       move_allowedp = true;
     }
   }
-  if(move_allowedp && piece_name.at(0) == 'w'){
-    for (int i = 1; i < 33; i++) { //
+  if(move_allowedp){
+    for (int i = 1; i < 49; i++) { //
     piece_in_the_way = memory_map[id_memory[i]];
     if(piece_in_the_way==move){
         return false;

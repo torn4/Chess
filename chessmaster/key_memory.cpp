@@ -4,7 +4,7 @@
 
 
 std::vector<std::string> key_mem::keymem(){
-std::vector <std::string> id_memory(33);
+std::vector <std::string> id_memory(49);
   id_memory[1] = "bp1";
   id_memory[2] = "bp2";
   id_memory[3] = "bp3";
@@ -38,5 +38,22 @@ std::vector <std::string> id_memory(33);
   id_memory[31] = "wr1";
   id_memory[32] = "wr2";
 
+  id_memory[33] = "wq1";
+  id_memory[34] = "wq2";
+  id_memory[35] = "wq3";
+  id_memory[36] = "wq4";
+  id_memory[37] = "wq5";
+  id_memory[38] = "wq6";
+  id_memory[39] = "wq7";
+  id_memory[40] = "wq8";
+
+  id_memory[41] = "bq1";
+  id_memory[42] = "bq2";
+  id_memory[43] = "bq3";
+  id_memory[44] = "bq4";
+  id_memory[45] = "bq5";
+  id_memory[46] = "bq6";
+  id_memory[47] = "bq7";
+  id_memory[48] = "bq8";
 return id_memory;
 }

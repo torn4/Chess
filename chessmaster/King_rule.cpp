@@ -26,7 +26,7 @@
 
    if (memory_map["wkk"] == 61 && move == 63 && memory_map["wr2"] == 64) { // Höger sida vit
 
-     for (int i = 1; i < 33; i++) { //
+     for (int i = 1; i < 49; i++) { //
        switch (memory_map[id_memory[i]]) {
        case 62:
        case 63:
@@ -38,7 +38,7 @@
      return_pair.second = 63;
      return return_pair;
    } else if (memory_map["wkk"] == 61 && move == 59 && memory_map["wr1"] == 57) { // vänster sida vit
-     for (int i = 1; i < 33; i++) { //
+     for (int i = 1; i < 49; i++) { //
        switch (memory_map[id_memory[i]]) {
        case 58:
        case 59:
@@ -52,7 +52,7 @@
      return_pair.second = 59;
      return return_pair;
    } else if (memory_map["bkk"] == 5 && move == 3 && memory_map["br1"] == 1) { // vänster sida svart
-     for (int i = 1; i < 33; i++) { //
+     for (int i = 1; i < 49; i++) { //
        switch (memory_map[id_memory[i]]) {
        case 2:
        case 3:
@@ -66,7 +66,7 @@
      return_pair.second = 3;
      return return_pair;
    } else if (memory_map["bkk"] == 5 && move == 7 && memory_map["br2"] == 8) { // höger sida svart
-     for (int i = 1; i < 33; i++) { //
+     for (int i = 1; i < 49; i++) { //
        switch (memory_map[id_memory[i]]) {
        case 6:
        case 7:

@@ -7,7 +7,7 @@
  std::pair<std::string,bool> name_take;
 int place=0;
 
-     for (int i = 1; i < 33; i++) {
+     for (int i = 1; i < 49; i++) {
       place = memory_map[id_memory[i]];
 
       if (place == move && (piece_name.at(0) != id_memory[i].at(0))) {

@@ -27,7 +27,7 @@
          x = pixelPospress.x;
          y = pixelPospress.y;
          chess_place = round((y - 42) / 84.375) * 8 + round((x - 42) / 84.375) + 1;
-         for (int i = 0; i < 33; i++) {
+         for (int i = 0; i < 49; i++) {
             if (memory_map[id_memory[i]] == chess_place) {
                piece_name = id_memory[i];
                found_button = 0;
