@@ -77,6 +77,25 @@ std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int m
       memory_map["wk2"] = 58;
       memory_map["wr1"] = 57;
       memory_map["wr2"] = 64;
+
+      memory_map["wq1"] =83;
+      memory_map["wq2"] =83;
+      memory_map["wq3"] =83;
+      memory_map["wq4"] =83;
+      memory_map["wq5"] =83;
+      memory_map["wq6"] =83;
+      memory_map["wq7"] =83;
+      memory_map["wq8"] =83;
+
+      memory_map["bq1"] =83;
+      memory_map["bq2"] =83;
+      memory_map["bq3"] =83;
+      memory_map["bq4"] =83;
+      memory_map["bq5"] =83;
+      memory_map["bq6"] =83;
+      memory_map["bq7"] =83;
+      memory_map["bq8"] =83;
+
       white = 1;
       movep = 0;
    } else if (piece_name.length() > 0 && memory_map[piece_name] != move) {

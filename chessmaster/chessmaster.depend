@@ -893,7 +893,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1540369222 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1540389535 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -1018,7 +1018,7 @@
 	<map>
 	<vector>
 
-1540297344 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
+1540389218 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
 	<utility>
 	"Rule_take_piece.h"
 	<string>
@@ -1035,19 +1035,34 @@
 1536650833 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.c
 	"Pawn_rule.h"
 
-1540381636 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
+1540391894 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
 	"chess_ai_main.h"
-	<stdlib.h >
-	<time.h>
+	<SFML/Graphics.hpp>
 	<iostream>
+	"find_piece.h"
+	<vector>
+	<map>
+	<string>
+	"print_sfml.h"
+	"pawn_rule.h"
+	"Rook_rule.h"
+	"Bishop_rule.h"
+	"King_rule.h"
+	"Knight_rule.h"
+	"Rule_take_piece.h"
+	<utility>
+	"pawn_uppgrade.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
 
-1540283762 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
+1540383954 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
 	<utility>
 	<string>
 	<vector>
 	<map>
 
-1540367019 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
+1540389305 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
 	"pawn_uppgrade.h"
 	<iostream>
 	<string>
@@ -1057,4 +1072,6 @@
 	<string>
 	<vector>
 	<map>
+
+1540382463 source:c:\users\sj930516\chessgame\chessmaster\mix_max.cpp
 
