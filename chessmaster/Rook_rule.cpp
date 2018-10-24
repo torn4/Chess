@@ -19,7 +19,7 @@ bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > m
     hp = memory_map[piece_name] / 8 - 1;
   }
 
-  if ((memory_map[piece_name] - move) % 8 == 0) { //upp o ned
+  if ((memory_map[piece_name] - move) % 8 == 0 && (memory_map[piece_name] != 79)) { //upp o ned
 
       for (int i = 1; i < 49; i++) { //
         piece_in_the_way = memory_map[id_memory[i]];

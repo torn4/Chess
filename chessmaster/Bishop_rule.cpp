@@ -3,35 +3,52 @@
 #include <cmath>
 #include "Rule_piece_collision.h"
 #include <vector>
+#include <stdlib.h>
 bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector < std::string > id_memory) {
-  int piece_in_the_way=71;
+   int piece_in_the_way = 71;
 
-  if (((memory_map[piece_name] - move) % 9) == 0) {
-              for (int i = 1; i < 33; i++) { //
-        piece_in_the_way = memory_map[id_memory[i]];
+   number = memory_map[piece_name];
+   if (number % 8 == 0) {
+      width = 7;
+      height = number / 8 - 1;
+   } else { //0 index board
+      width = number % 8 - 1;
+      height = number / 8;
+   }
 
-        if (((memory_map[piece_name] > piece_in_the_way) && (piece_in_the_way > move) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 9 == move % 9)) { // Kollar om man kan gå upp&& piece_in_the_way != move
-          return false;
-          break;
-        } else if ((((memory_map[piece_name] < piece_in_the_way)  && (piece_in_the_way < move)) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 9 == move % 9)) {
-          return false;
-          break;
-        }
+   if (move % 8 == 0) {
+      mwidth = 7;
+      mheight = move / 8 - 1;
+   } else { //0 index board
+      mwidth = move % 8 - 1;
+      mheight = move / 8;
+   }
+
+   if ((abs(width - mwidth) == abs(height - mheight)) && (memory_map[piece_name] != 79)) {
+
+      for (int i = 1; i < 49; i++) {
+         piece_in_the_way = memory_map[id_memory[i]];
+         if (piece_in_the_way % 8 == 0) {
+            iwidth = 7;
+            iheight = piece_in_the_way / 8 - 1;
+         } else { //0 index board
+            iwidth = piece_in_the_way % 8 - 1;
+            iheight = piece_in_the_way / 8;
+         }
+if((abs(iwidth - mwidth) == abs(iheight - mheight))){
+         if((height >iheight && iheight >mheight && iwidth>width && mwidth >iwidth ) //Höger upp
+         ||(height>iheight && mheight <iheight && width>iwidth && iwidth >mwidth) //Höger ned
+         ||(height <iheight && iheight<mheight && width<iwidth && iwidth<mwidth)//Höger ned
+         ||(height<iheight && iheight<mheight && width>iwidth && iwidth>mwidth))
+          {
+
+            return false;
+         }
       }
-    return true;
-  } else if (((memory_map[piece_name] - move) % 7) == 0){
-              for (int i = 1; i < 33; i++) { //
-        piece_in_the_way = memory_map[id_memory[i]];
-
-        if (((memory_map[piece_name] > piece_in_the_way) && (piece_in_the_way > move) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 7 == move % 7)) { // Kollar om man kan gå upp&& piece_in_the_way != move
-          return false;
-          break;
-        } else if ((((memory_map[piece_name] < piece_in_the_way)  && (piece_in_the_way < move)) && memory_map[piece_name] != piece_in_the_way) && (piece_in_the_way % 7 == move % 7)) {
-          return false;
-          break;
-        }
       }
-    return true;
-  }
-  return false;
+      return true;
+   }
+
+
+   return false;
 }

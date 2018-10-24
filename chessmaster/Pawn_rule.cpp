@@ -4,19 +4,24 @@
 #include <iostream>
 #include "Rule_take_piece.h"
 
+
+
 bool pawn_rule::pawnRule(std::string piece_name, std::map < std::string, int > memory_map, int move,std::vector<std::string>id_memory) {
   bool move_allowedp;
-
+bool double_move_8=false;
+bool double_move=false;
 move_allowedp = false;
   if (piece_name.length() > 0) { //Kollar om bonden kan röra sig dit
     if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 8) {
       move_allowedp = true;
     } else if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 16 && memory_map[piece_name] <= 56 && 49 <= memory_map[piece_name]) {
       move_allowedp = true;
+    double_move=true;
     } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 8) {
       move_allowedp = true;
     } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 16 && 9 <= memory_map[piece_name] && memory_map[piece_name] <= 16) {
       move_allowedp = true;
+      double_move_8=true;
     }
   }
   if(move_allowedp){
@@ -24,8 +29,13 @@ move_allowedp = false;
     piece_in_the_way = memory_map[id_memory[i]];
     if(piece_in_the_way==move){
         return false;
+    } else if (double_move &&(piece_in_the_way==move || piece_in_the_way==move+8 )) {
+     return false;
+    }else if (double_move_8 && (piece_in_the_way==move || piece_in_the_way==move-8)){
+     return false;
     }
-    }
+}
+
 }
   return move_allowedp;
 }

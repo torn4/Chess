@@ -58,7 +58,7 @@ if(white==1){
        white= !white;
        }
      }
-     if ((memory_map["wkk"] == 70 || memory_map["bkk"] == 70)) {
+     if ((memory_map["wkk"] == 79 || memory_map["bkk"] == 79)) {
        std::cout << "Game over " << std::endl;
        return 0;
      }

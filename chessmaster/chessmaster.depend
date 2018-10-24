@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1540302292 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1540365058 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -893,7 +893,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1540302293 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1540369222 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -910,7 +910,7 @@
 	<utility>
 	"pawn_uppgrade.h"
 
-1540302008 c:\users\sj930516\chessgame\chessmaster\find_piece.h
+1540365362 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 	<map>
 
 1540299267 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
@@ -929,7 +929,7 @@
 	<vector>
 	<map>
 
-1540297335 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1540306179 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
 	<string>
@@ -943,7 +943,7 @@
 	"Rule_piece_collision.h"
 	<utility>
 
-1540297333 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
+1540365606 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
 	<iostream>
 	"Rule_piece_collision.h"
@@ -954,14 +954,15 @@
 	<string>
 	<vector>
 
-1537189889 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1540381248 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>
 	"Rule_piece_collision.h"
 	<vector>
+	<stdlib.h>
 
-1536762579 c:\users\sj930516\chessgame\chessmaster\bishop_rule.h
+1540370796 c:\users\sj930516\chessgame\chessmaster\bishop_rule.h
 	<map>
 	<string>
 	<vector>
@@ -994,7 +995,7 @@
 	<string>
 	<vector>
 
-1540291531 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
+1540365590 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
 	"Knight_rule.h"
 	<iostream>
 	"Rule_piece_collision.h"
@@ -1034,7 +1035,7 @@
 1536650833 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.c
 	"Pawn_rule.h"
 
-1540286620 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
+1540381636 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
 	"chess_ai_main.h"
 	<stdlib.h >
 	<time.h>
@@ -1046,7 +1047,7 @@
 	<vector>
 	<map>
 
-1540298968 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
+1540367019 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
 	"pawn_uppgrade.h"
 	<iostream>
 	<string>

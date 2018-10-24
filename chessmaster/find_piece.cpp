@@ -34,7 +34,7 @@ bool chessPieces::move_ok(std::string piece_name, bool & white) { //Kollar svart
    return move_allowed;
 }
 
-std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int move, int init, std::vector < std::string > &id_memory) //Here we save the posistion of all the values
+std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int move, int init, std::vector < std::string > id_memory) //Here we save the posistion of all the values
 {
 
    //högst upp till vänster är 1, längst ned till höger är 64
@@ -109,10 +109,10 @@ std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int m
 
       } else if (piece_name.at(1) == 'q') {
          movep = br.bishoprule(piece_name, memory_map, move, id_memory) || rr.rookrule(piece_name, memory_map, move, id_memory);
-         std::cout<<"drottning"<<std::endl;
 
       } else if (piece_name.at(1) == 'k' && piece_name.at(2) == 'k') {
          movep = kr.kingrule(piece_name, memory_map, move);
+
       } else if (piece_name.at(1) == 'k') {
          movep = kn.knightrule(piece_name, memory_map, move);
       }
@@ -124,7 +124,7 @@ std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int m
 
       } else if(piece_name.at(1) == 'k' && piece_name.at(2) == 'k'){ // Kollar om vi ska castla
        castling_rule = kr.castle(piece_name, memory_map, move,id_memory);
-       movep = castling_rule.first;
+      // movep = castling_rule.first;
       }
 
 
@@ -142,11 +142,13 @@ std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int m
         memory_map=pu.pawnupp(memory_map,id_memory,piece_name,move);
 
          if (take_true.second) {
-            memory_map[take_true.first] = 505;
+            memory_map[take_true.first] = 79;
       id_memory[move] = "gone";
 
 }
  } else if (castling_rule.first){
+       memory_map[piece_name] = move;
+     std::cout<<"rokad test "<<std::endl;
                 if(castling_rule.second == 59){ // Castling
                      memory_map["wr1"] = 60;
                 }else if (castling_rule.second == 63) {

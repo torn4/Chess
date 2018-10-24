@@ -4,6 +4,9 @@
 #include <vector>
 
   bool knight_rule::knightrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
+if(memory_map[piece_name] != 79)
+   {
+
 
 number = memory_map[piece_name];
     if (number % 8 == 0) {
@@ -31,6 +34,6 @@ number = memory_map[piece_name];
     }else if (height == mheight-2 && (width == mwidth+1 || width == mwidth -1)){
     return true;
     }
-
+   }
     return false;
   }
