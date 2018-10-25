@@ -15,4 +15,5 @@ bool moveb;
 bool white;
 bool legal_move;
 
+
 };

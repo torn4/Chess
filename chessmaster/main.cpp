@@ -47,7 +47,8 @@ if(white==1){
 
      piecepos = bp.find_button_pos(window, event, memory_map, id_memory);
 }else {
-   piecepos = ai.aimove(memory_map,id_memory);
+   //   piecepos = bp.find_button_pos(window, event, memory_map, id_memory); // För debugg
+  piecepos = ai.aimove(memory_map,id_memory); // Om man vill spela själv
 }
 
      if (piecepos.first.length() > 0 && piecepos.first != "gone") { //Printa bara om vi måste

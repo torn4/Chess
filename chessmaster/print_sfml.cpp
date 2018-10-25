@@ -112,21 +112,21 @@ void print_function(sf::RenderWindow & window, int start, std::map < std::string
     wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
 
             whiteRookn = wr.wksetPos(memory_map["bq1"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq2"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq3"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq4"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq5"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq6"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq7"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
         whiteRookn = wr.wksetPos(memory_map["bq8"], whiteRookn);
-    wr.wkdraw(window, whiteRookn, "../Figures/whiteQueen.png");
+    wr.wkdraw(window, whiteRookn, "../Figures/blackQueen.png");
 
     window.display();
   } //När man uppdaterar pringen

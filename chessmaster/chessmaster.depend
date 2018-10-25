@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1540365058 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1540471174 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -883,9 +883,9 @@
 
 1536315962 c:\users\sj930516\chessgame\chessmaster\whitequeen.h
 
-1536571770 c:\users\sj930516\chessgame\chessmaster\whiterook.h
+1540470553 c:\users\sj930516\chessgame\chessmaster\whiterook.h
 
-1540299040 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
+1540462537 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -893,7 +893,7 @@
 
 1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1540389535 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1540470728 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -910,7 +910,7 @@
 	<utility>
 	"pawn_uppgrade.h"
 
-1540365362 c:\users\sj930516\chessgame\chessmaster\find_piece.h
+1540470733 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 	<map>
 
 1540299267 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
@@ -929,7 +929,7 @@
 	<vector>
 	<map>
 
-1540306179 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1540470366 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
 	<string>
@@ -943,10 +943,9 @@
 	"Rule_piece_collision.h"
 	<utility>
 
-1540365606 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
+1540470378 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
 	<iostream>
-	"Rule_piece_collision.h"
 	<cstdlib>
 
 1536763462 c:\users\sj930516\chessgame\chessmaster\rook_rule.h
@@ -954,11 +953,10 @@
 	<string>
 	<vector>
 
-1540381248 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1540470630 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>
-	"Rule_piece_collision.h"
 	<vector>
 	<stdlib.h>
 
@@ -983,10 +981,9 @@
 	<vector>
 	<utility>
 
-1540297303 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
+1540470334 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
 	"King_rule.h"
 	<iostream>
-	"Rule_piece_collision.h"
 	<vector>
 	<utility>
 
@@ -995,13 +992,12 @@
 	<string>
 	<vector>
 
-1540365590 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
-	"Knight_rule.h"
+1540470629 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
 	<iostream>
-	"Rule_piece_collision.h"
 	<vector>
+	"Knight_rule.h"
 
-1540297365 source:c:\users\sj930516\chessgame\chessmaster\key_memory.cpp
+1540463253 source:c:\users\sj930516\chessgame\chessmaster\key_memory.cpp
 	"key_memory.h"
 	<string>
 	<vector>
@@ -1018,7 +1014,7 @@
 	<map>
 	<vector>
 
-1540389218 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
+1540470018 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
 	<utility>
 	"Rule_take_piece.h"
 	<string>
@@ -1035,34 +1031,34 @@
 1536650833 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.c
 	"Pawn_rule.h"
 
-1540391894 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
+1540471138 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
 	"chess_ai_main.h"
 	<SFML/Graphics.hpp>
 	<iostream>
-	"find_piece.h"
 	<vector>
 	<map>
 	<string>
 	"print_sfml.h"
+	<utility>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1540470409 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
+	<utility>
+	<string>
+	<vector>
+	<vector>
+	<map>
 	"pawn_rule.h"
 	"Rook_rule.h"
 	"Bishop_rule.h"
 	"King_rule.h"
 	"Knight_rule.h"
 	"Rule_take_piece.h"
-	<utility>
 	"pawn_uppgrade.h"
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
 
-1540383954 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
-	<utility>
-	<string>
-	<vector>
-	<map>
-
-1540389305 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
+1540471052 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
 	"pawn_uppgrade.h"
 	<iostream>
 	<string>

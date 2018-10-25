@@ -1,7 +1,8 @@
-#include "Knight_rule.h"
+
 #include <iostream>
-#include "Rule_piece_collision.h"
+
 #include <vector>
+#include "Knight_rule.h"
 
   bool knight_rule::knightrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {
 if(memory_map[piece_name] != 79)

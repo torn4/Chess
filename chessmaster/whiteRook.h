@@ -1,8 +1,3 @@
-
-
-
-
-
 class whiteRook{
 public:
 sf::Sprite wksetvar();

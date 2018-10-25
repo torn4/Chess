@@ -1,7 +1,6 @@
 #include "bishop_rule.h"
 #include <iostream>
 #include <cmath>
-#include "Rule_piece_collision.h"
 #include <vector>
 #include <stdlib.h>
 bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector < std::string > id_memory) {
@@ -36,10 +35,10 @@ bool bishop_rule::bishoprule(std::string piece_name, std::map < std::string, int
             iheight = piece_in_the_way / 8;
          }
 if((abs(iwidth - mwidth) == abs(iheight - mheight))){
-         if((height >iheight && iheight >mheight && iwidth>width && mwidth >iwidth ) //Höger upp
-         ||(height>iheight && mheight <iheight && width>iwidth && iwidth >mwidth) //Höger ned
-         ||(height <iheight && iheight<mheight && width<iwidth && iwidth<mwidth)//Höger ned
-         ||(height<iheight && iheight<mheight && width>iwidth && iwidth>mwidth))
+        if((height>iheight && iheight>mheight && iwidth>width && mwidth>iwidth ) //Höger upp
+         ||(height>iheight && iheight>mheight && width>iwidth && iwidth>mwidth) //Höger ned
+         ||(height<iheight && iheight<mheight && width<iwidth && iwidth<mwidth)//Vänster ned
+         ||(height<iheight && iheight<mheight && width>iwidth && iwidth>mwidth))//Höger ned
           {
 
             return false;

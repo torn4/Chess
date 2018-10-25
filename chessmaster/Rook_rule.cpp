@@ -1,6 +1,6 @@
 #include "Rook_rule.h"
 #include <iostream>
-#include "Rule_piece_collision.h"
+
 #include <cstdlib>
 bool rook_rule::rookrule(std::string piece_name, std::map < std::string, int > memory_map, int move, std::vector < std::string > id_memory) {
 

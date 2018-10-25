@@ -1,6 +1,6 @@
 #include "King_rule.h"
 #include <iostream>
-#include "Rule_piece_collision.h"
+
 #include <vector>
 #include <utility>
  bool king_rule::kingrule(std::string piece_name, std::map < std::string, int > memory_map, int move) {

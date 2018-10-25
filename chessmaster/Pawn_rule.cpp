@@ -48,7 +48,7 @@ move_allowedp = false;
      take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
     } else if (piece_name.at(0) == 'w' && memory_map[piece_name] == move + 7 ) {
      take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
-    } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 9) {
+    } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 9 &&memory_map[piece_name]%8!=0 ) {
      take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
     } else if (piece_name.at(0) == 'b' && memory_map[piece_name] == move - 7 ) {
      take_true=tp.takepiece(memory_map,id_memory,piece_name,move);
