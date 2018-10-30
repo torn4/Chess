@@ -13,17 +13,21 @@
 #include "pawn_uppgrade.h"
 
 
-class ai_move{
-    public:
-void piece_value(int a, int i, std::vector < std::string > id_memory);
-std::pair<std::string,int> aimove(std::map<std::string,int> memory_map,std::vector<std::string>id_memory);
-std::pair < std::string, int > Random_move(std::map < std::string, int > memory_map, std::vector < std::string > id_memory);
-std::pair < std::string, int > min_max(std::map < std::string, int > memory_map, std::vector < std::string > id_memory);
-int random_numb;
-int max_point;
-int max_point_earlier;
-bool movep;
-std::pair<std::string,int>move_pair;
+class ai_move
+{
+public:
+    void piece_value(int a, int i, std::vector < std::string > id_memory,std::string piece_name);
+    std::pair<std::string,int> aimove(std::map<std::string,int> memory_map,std::vector<std::string>id_memory);
+    std::pair < std::string, int > Random_move(std::map < std::string, int > memory_map, std::vector < std::string > id_memory, std::string piece);
+    std::pair < std::string, int > min_max(std::map < std::string, int > memory_map, std::vector < std::string > id_memory, std::string piece);
+    std::map<std::string,int> memory_map_ai;
+    std::map <std::string, int> count_score(std::map < std::string, int > memory_map,std::vector < std::string > id_memory, int move);
+    int take_piece_b(std::map < std::string, int > memory_map, std::vector < std::string > id_memory);
+    int random_numb;
+    int max_point;
+    int max_point_earlier;
+    bool movep;
+    std::pair<std::string,int>move_pair;
     std::string piece_name;
     pawn_rule pr; // Bondens regler
     rook_rule rr;

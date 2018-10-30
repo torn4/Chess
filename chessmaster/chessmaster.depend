@@ -411,7 +411,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1540471174 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
+1540467574 source:c:\users\sj930516\chessgame\chessmaster\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
@@ -427,7 +427,7 @@
 	"key_memory.h"
 	"chess_ai_main.h"
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -456,7 +456,7 @@
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window.hpp
 	<SFML/System.hpp>
 	<SFML/Window/Clipboard.hpp>
 	<SFML/Window/Context.hpp>
@@ -473,7 +473,7 @@
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system.hpp
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -493,24 +493,24 @@
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\config.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\config.hpp
 	"TargetConditionals.h"
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\clock.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\clock.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\export.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\time.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\err.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\err.hpp
 	<SFML/System/Export.hpp>
 	<ostream>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\fileinputstream.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\fileinputstream.hpp
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/InputStream.hpp>
@@ -518,32 +518,32 @@
 	<cstdio>
 	<string>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\inputstream.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\inputstream.hpp
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\noncopyable.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\noncopyable.hpp
 	<SFML/System/Export.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\lock.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\lock.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\memoryinputstream.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\memoryinputstream.hpp
 	<SFML/Config.hpp>
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\mutex.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\mutex.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\sleep.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\sleep.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\string.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\string.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -551,7 +551,7 @@
 	<string>
 	<SFML/System/String.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\utf.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\utf.hpp
 	<SFML/Config.hpp>
 	<algorithm>
 	<locale>
@@ -559,96 +559,96 @@
 	<cstdlib>
 	<SFML/System/Utf.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\utf.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\utf.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\string.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\string.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\thread.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\thread.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
 	<SFML/System/Thread.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\thread.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\thread.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocal.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocal.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocalptr.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocalptr.hpp
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocalptr.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\threadlocalptr.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector2.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector2.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector2.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector3.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector3.hpp
 	<SFML/System/Vector3.inl>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector3.inl
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\system\vector3.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\clipboard.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\clipboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\export.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\context.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\context.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\glresource.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\glresource.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\contextsettings.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\contextsettings.hpp
 	<SFML/Config.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\cursor.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\cursor.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\event.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\event.hpp
 	<SFML/Config.hpp>
 	<SFML/Window/Joystick.hpp>
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\joystick.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\joystick.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\keyboard.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\mouse.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\mouse.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\sensor.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\sensor.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\touch.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\videomode.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\videomode.hpp
 	<SFML/Window/Export.hpp>
 	<vector>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\window.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\window.hpp
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/Cursor.hpp>
 	<SFML/Window/Export.hpp>
@@ -661,54 +661,54 @@
 	<SFML/System/String.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\windowhandle.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\windowhandle.hpp
 	<SFML/Config.hpp>
 
-1536240682 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\windowstyle.hpp
+1536237082 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\window\windowstyle.hpp
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\blendmode.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\export.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\circleshape.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\circleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\shape.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\shape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\drawable.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\renderstates.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\renderstates.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\transform.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\transform.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rect.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rect.hpp
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rect.inl
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rect.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\transformable.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\transformable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertexarray.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertexarray.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -716,22 +716,22 @@
 	<SFML/Graphics/Drawable.hpp>
 	<vector>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertex.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertex.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\color.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\color.hpp
 	<SFML/Graphics/Export.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\primitivetype.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\primitivetype.hpp
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\convexshape.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\convexshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\font.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\font.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Glyph.hpp>
 	<SFML/Graphics/Texture.hpp>
@@ -742,27 +742,27 @@
 	<string>
 	<vector>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glyph.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\texture.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\texture.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\image.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\image.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rectangleshape.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rendertarget.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rendertarget.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -774,26 +774,26 @@
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\view.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\view.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rendertexture.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\rendertexture.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\renderwindow.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\renderwindow.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/Window.hpp>
 	<string>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\shader.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\shader.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Glsl.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -803,23 +803,23 @@
 	<map>
 	<string>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glsl.hpp
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glsl.hpp
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/Graphics/Glsl.inl>
 
-1536240680 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glsl.inl
+1536237080 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\glsl.inl
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\sprite.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\sprite.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/Rect.hpp>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\text.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\text.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -830,7 +830,7 @@
 	<string>
 	<vector>
 
-1536240681 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertexbuffer.hpp
+1536237081 c:\users\sj930516\chessgame\sfml-2.5.0-windows-gcc-5.1.0-tdm-32-bit\sfml-2.5.0\include\sfml\graphics\vertexbuffer.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -843,12 +843,12 @@
 
 1536315287 c:\users\sj930516\chessgame\chessmaster\whiteking.h
 
-1536735537 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
+1536731937 source:c:\users\sj930516\chessgame\chessmaster\chessboard.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
 
-1536571770 c:\users\sj930516\chessgame\chessmaster\chessboard.h
+1536568170 c:\users\sj930516\chessgame\chessmaster\chessboard.h
 
 1536314921 source:c:\users\sj930516\chessgame\chessmaster\whitebishop.cpp
 	<SFML/Graphics.hpp>
@@ -867,7 +867,7 @@
 	<iostream>
 	"whiteQueen.h"
 
-1536738214 source:c:\users\sj930516\chessgame\chessmaster\whiterook.cpp
+1536734614 source:c:\users\sj930516\chessgame\chessmaster\whiterook.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"whiteRook.h"
@@ -883,17 +883,17 @@
 
 1536315962 c:\users\sj930516\chessgame\chessmaster\whitequeen.h
 
-1540470553 c:\users\sj930516\chessgame\chessmaster\whiterook.h
+1540466953 c:\users\sj930516\chessgame\chessmaster\whiterook.h
 
-1540462537 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
+1540458937 source:c:\users\sj930516\chessgame\chessmaster\print_sfml.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"chessboard.h"
 	"whiteRook.h"
 
-1536571770 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
+1536568170 c:\users\sj930516\chessgame\chessmaster\print_sfml.h
 
-1540470728 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
+1540555376 source:c:\users\sj930516\chessgame\chessmaster\find_piece.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"find_piece.h"
@@ -910,10 +910,10 @@
 	<utility>
 	"pawn_uppgrade.h"
 
-1540470733 c:\users\sj930516\chessgame\chessmaster\find_piece.h
+1540467133 c:\users\sj930516\chessgame\chessmaster\find_piece.h
 	<map>
 
-1540299267 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
+1540295667 source:c:\users\sj930516\chessgame\chessmaster\button_press.cpp
 	<vector>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -924,43 +924,43 @@
 	<utility>
 	"key_memory.h"
 
-1540282822 c:\users\sj930516\chessgame\chessmaster\button_press.h
+1540279222 c:\users\sj930516\chessgame\chessmaster\button_press.h
 	<utility>
 	<vector>
 	<map>
 
-1540470366 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
+1540466766 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.cpp
 	"Pawn_rule.h"
 	<iostream>
 	<string>
 	<iostream>
 	"Rule_take_piece.h"
 
-1540289868 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
+1540286268 c:\users\sj930516\chessgame\chessmaster\pawn_rule.h
 	<map>
 	<string>
 	<vector>
 	"Rule_piece_collision.h"
 	<utility>
 
-1540470378 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
+1540466778 source:c:\users\sj930516\chessgame\chessmaster\rook_rule.cpp
 	"Rook_rule.h"
 	<iostream>
 	<cstdlib>
 
-1536763462 c:\users\sj930516\chessgame\chessmaster\rook_rule.h
+1536759862 c:\users\sj930516\chessgame\chessmaster\rook_rule.h
 	<map>
 	<string>
 	<vector>
 
-1540470630 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
+1540467030 source:c:\users\sj930516\chessgame\chessmaster\bishop_rule.cpp
 	"bishop_rule.h"
 	<iostream>
 	<cmath>
 	<vector>
 	<stdlib.h>
 
-1540370796 c:\users\sj930516\chessgame\chessmaster\bishop_rule.h
+1540367196 c:\users\sj930516\chessgame\chessmaster\bishop_rule.h
 	<map>
 	<string>
 	<vector>
@@ -975,52 +975,52 @@
 	<map>
 	<string>
 
-1540291297 c:\users\sj930516\chessgame\chessmaster\king_rule.h
+1540287697 c:\users\sj930516\chessgame\chessmaster\king_rule.h
 	<map>
 	<string>
 	<vector>
 	<utility>
 
-1540470334 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
+1540466734 source:c:\users\sj930516\chessgame\chessmaster\king_rule.cpp
 	"King_rule.h"
 	<iostream>
 	<vector>
 	<utility>
 
-1540291301 c:\users\sj930516\chessgame\chessmaster\knight_rule.h
+1540287701 c:\users\sj930516\chessgame\chessmaster\knight_rule.h
 	<map>
 	<string>
 	<vector>
 
-1540470629 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
+1540467029 source:c:\users\sj930516\chessgame\chessmaster\knight_rule.cpp
 	<iostream>
 	<vector>
 	"Knight_rule.h"
 
-1540463253 source:c:\users\sj930516\chessgame\chessmaster\key_memory.cpp
+1540459653 source:c:\users\sj930516\chessgame\chessmaster\key_memory.cpp
 	"key_memory.h"
 	<string>
 	<vector>
 
-1536742361 c:\users\sj930516\chessgame\chessmaster\key_memory.h
+1536738761 c:\users\sj930516\chessgame\chessmaster\key_memory.h
 	<string>
 	<vector>
 
-1540297340 source:c:\users\sj930516\chessgame\chessmaster\rule_piece_collision.cpp
+1540293740 source:c:\users\sj930516\chessgame\chessmaster\rule_piece_collision.cpp
 	"Rule_piece_collision.h"
 
-1536757016 c:\users\sj930516\chessgame\chessmaster\rule_piece_collision.h
+1536753416 c:\users\sj930516\chessgame\chessmaster\rule_piece_collision.h
 	<string>
 	<map>
 	<vector>
 
-1540470018 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
+1540466418 source:c:\users\sj930516\chessgame\chessmaster\rule_take_piece.cpp
 	<utility>
 	"Rule_take_piece.h"
 	<string>
 	<iostream>
 
-1536757016 c:\users\sj930516\chessgame\chessmaster\rule_take_piece.h
+1536753416 c:\users\sj930516\chessgame\chessmaster\rule_take_piece.h
 	<map>
 	<vector>
 	<string>
@@ -1031,7 +1031,7 @@
 1536650833 source:c:\users\sj930516\chessgame\chessmaster\pawn_rule.c
 	"Pawn_rule.h"
 
-1540471138 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
+1540910680 source:c:\users\sj930516\chessgame\chessmaster\chess_ai_main.cpp
 	"chess_ai_main.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -1044,7 +1044,7 @@
 	<stdlib.h>
 	<time.h>
 
-1540470409 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
+1540910605 c:\users\sj930516\chessgame\chessmaster\chess_ai_main.h
 	<utility>
 	<string>
 	<vector>
@@ -1058,12 +1058,12 @@
 	"Rule_take_piece.h"
 	"pawn_uppgrade.h"
 
-1540471052 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
+1540467452 source:c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.cpp
 	"pawn_uppgrade.h"
 	<iostream>
 	<string>
 
-1540297873 c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.h
+1540294273 c:\users\sj930516\chessgame\chessmaster\pawn_uppgrade.h
 	<utility>
 	<string>
 	<vector>

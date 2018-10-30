@@ -167,7 +167,6 @@ std::map <std::string, int> chessPieces::piece_pos(std::string piece_name, int m
 }
  } else if (castling_rule.first){
        memory_map[piece_name] = move;
-     std::cout<<"rokad test "<<std::endl;
                 if(castling_rule.second == 59){ // Castling
                      memory_map["wr1"] = 60;
                 }else if (castling_rule.second == 63) {
