@@ -21,16 +21,15 @@ std::vector <std::string> id_memory(49);
   id_memory[14] = "bk2";
   id_memory[15] = "br1";
   id_memory[16] = "br2";
-
-  id_memory[17] = "bq1";
+    id_memory[17] = "bq1";
   id_memory[18] = "bq2";
-  id_memory[19]= "bq3";
-  id_memory[20] = "bq4";
-  id_memory[21] = "bq5";
-  id_memory[22] = "bq6";
-  id_memory[23] = "bq7";
-  id_memory[24] = "bq8";
 
+  id_memory[19] = "wp3";
+  id_memory[20] = "wp4";
+  id_memory[21] = "wp5";
+  id_memory[22] = "wp6";
+  id_memory[23] = "wp7";
+  id_memory[24] = "wp8";
   id_memory[25] = "wb1";
   id_memory[26] = "wb2";
   id_memory[27] = "wkk";
@@ -39,7 +38,6 @@ std::vector <std::string> id_memory(49);
   id_memory[30] = "wk2";
   id_memory[31] = "wr1";
   id_memory[32] = "wr2";
-
   id_memory[33] = "wq1";
   id_memory[34] = "wq2";
   id_memory[35] = "wq3";
@@ -48,16 +46,15 @@ std::vector <std::string> id_memory(49);
   id_memory[38] = "wq6";
   id_memory[39] = "wq7";
   id_memory[40] = "wq8";
-
   id_memory[41] = "wp1";
   id_memory[42] = "wp2";
-  id_memory[43] = "wp3";
-  id_memory[44] = "wp4";
-  id_memory[45] = "wp5";
-  id_memory[46] = "wp6";
-  id_memory[47] = "wp7";
-  id_memory[48] = "wp8";
-
+  id_memory[43] = "bq3";
+  id_memory[44] = "bq4";
+  id_memory[45] = "bq5";
+  id_memory[46] = "bq6";
+  id_memory[47] = "bq7";
+  id_memory[48] = "bq8";
 
 return id_memory;
 }
+
